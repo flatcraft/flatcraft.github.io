@@ -1,22 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>FlatCraft</title>
   <style>
-    body {
-      font-family: sans-serif;
-      background: #f0f0f0;
-      text-align: center;
-      padding: 50px;
+    /* Basale reset en layout */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: sans-serif; line-height: 1.6; color: #333; }
+    a { color: #0066cc; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    header { background: #222; padding: 1em 0; }
+    nav ul { display: flex; justify-content: center; list-style: none; }
+    nav li { margin: 0 1em; }
+    nav a { color: #fff; font-weight: bold; }
+
+    main { max-width: 800px; margin: 2em auto; padding: 0 1em; }
+    section { margin-bottom: 2em; }
+    h1, h2 { margin-bottom: 0.5em; }
+    .button {
+      display: inline-block;
+      background: #0066cc;
+      color: #fff;
+      padding: 0.5em 1em;
+      border-radius: 4px;
+      margin-top: 0.5em;
     }
-    h1 {
-      color: #333;
+    .button:hover { background: #005bb5; }
+
+    footer {
+      text-align: center;
+      padding: 1em 0;
+      background: #f0f0f0;
+      font-size: 0.9em;
     }
   </style>
 </head>
 <body>
-  <h1>Welkom bij FlatCraft</h1>
-  <p>Een minimalistische plek voor creatieve projecten en ideeën.</p>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#installation">Installatie</a></li>
+        <li><a href="#screenshots">Screenshots</a></li>
+        <li><a href="#downloads">Downloads</a></li>
+        <li><a href="#changelog">Changelog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home">
+      <h1>FlatCraft</h1>
+      <p>Minimalistische renderer voor creatieve projecten.</p>
+    </section>
+
+    <section id="installation">
+      <h2>Installatie</h2>
+      <p>Volg deze stappen om FlatCraft te installeren:</p>
+      <ol>
+        <li>Download de nieuwste release via de knop hieronder.</li>
+        <li>Plaats het bestand in je projectmap.</li>
+        <li>Laad de renderer in je applicatie.</li>
+      </ol>
+    </section>
+
+    <section id="screenshots">
+      <h2>Screenshots</h2>
+      <p>Een voorproefje van wat je kunt verwachten:</p>
+      <img src="screenshot1.png" alt="Screenshot 1" width="100%" style="margin-bottom:1em;">
+      <img src="screenshot2.png" alt="Screenshot 2" width="100%">
+    </section>
+
+    <section id="downloads">
+      <h2>Downloads</h2>
+      <a href="https://example.com/flatcraft.zip" class="button">Download FlatCraft</a>
+    </section>
+
+    <section id="changelog">
+      <h2>Changelog</h2>
+      <ul>
+        <li><strong>v1.0.0</strong> — Lancering van FlatCraft.</li>
+        <li><strong>v1.1.0</strong> — Ondersteuning voor hoge resolutie toegevoegd.</li>
+        <li><strong>v1.2.0</strong> — Bugfixes en performance-optimalisaties.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 FlatCraft — alle rechten voorbehouden.
+  </footer>
+
 </body>
 </html>
